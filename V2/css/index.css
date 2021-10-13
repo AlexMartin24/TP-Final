@@ -1,0 +1,37 @@
+
+.nav-menu{
+    display: inline-block;	
+
+    color:#fff;
+    padding: 10px 50px;
+    width: 350px;
+    }
+    
+    li{
+        float: left;
+    }
+    
+    ul {
+        list-style-type: none;
+        font-size: 150%;
+    }
+        
+    
+    body{
+        font-family: Arial, sans-serif;
+    }
+
+    .productos{
+        margin-left: 5%;
+    }
+    
+    .productos img {
+        margin: 1%;
+        width: 800px;
+        height:800x;
+
+ 
+  
+        padding: 1px;
+    }
+    

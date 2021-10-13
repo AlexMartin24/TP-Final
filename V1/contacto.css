@@ -1,0 +1,15 @@
+.nav-enlace{
+	display: inline-block;	
+	background: salmon;
+	color:#fff;
+	padding: 10px 50px
+}
+.nav-enlace:hover{
+	background: rosybrown;
+}
+li{
+	float: left;
+}
+ul {
+	list-style-type: none;
+}

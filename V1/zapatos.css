@@ -1,0 +1,26 @@
+.nav-enlace{
+	display: inline-block;	
+	background: salmon;
+	color:#fff;
+	padding: 10px 50px
+}
+.nav-enlace:hover{
+	background: rosybrown;
+}
+li{
+	float: left;
+}
+
+.productos img {
+	margin: 1%;
+	width: 200px;
+	height:200px;
+	object-fit: cover;
+	border-radius: 50%;
+	border:2px solid #fff;
+}
+
+ul {
+	list-style-type: none;
+}
+	
