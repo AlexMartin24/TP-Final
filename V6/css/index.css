@@ -1,0 +1,146 @@
+  /*Color fondo*/
+ body{
+        background-color: #FADBD8;
+        font-family: Arial, sans-serif;
+    }
+
+
+    /*Contenedor Menu*/
+    .contenedor{
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .categorias{
+        display: flex;
+        flex-wrap: wrap;
+     }
+   
+    header .categorias a{
+        color: black;
+        margin: 5px 5px;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px;
+    }
+        
+
+    /*Imagenes del inicio*/
+    .inicio{
+        margin-left: 5%;
+        padding-top: 2%;
+    }
+
+    .inicio img {
+        margin: 1%;
+        width: 800px;
+        height:800px;
+        padding: 1px;
+        border-radius: 10%;
+	    border:4px solid #fff;
+    }
+
+    .centrarinicio :hover{
+        transform: scale(1.1);
+        transition-duration: 3s;
+    }
+
+
+
+/*Contenedor Productos Destacados */
+ .contenedorIma{
+    background-color: rgba(15, 120, 240, 0.1);
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/*Imagen Mapa */
+.centrarimagenes{
+display: flex;
+flex-direction: row;
+
+}
+
+.imagenes img{
+	margin: 1%;
+	width: 300px;
+	height:300px;
+	object-fit: cover;
+	border-radius: 50%;
+	border:2px solid #fff;
+	position: relative;
+	padding: 1px;
+}
+
+.centrarimagenes :hover img{
+transform: scale(1.1);
+transition-duration: 3s;
+}
+
+.descripcionInicio{
+text-align: center;
+padding: 10px;
+font-size: 25px;
+font-family: comic;
+}
+
+.text{
+padding: 10px;
+font-size: 20px;
+text-align: center;
+}
+
+
+
+
+
+
+/*Barra Redes Sociales*/
+    .redes-sociales {
+        position: fixed;
+        right: 0;
+        top: 35%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    }
+    
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: .7rem;
+        display: flex;
+        transition: all .5s;
+    }
+    
+    .icon-facebook {
+        background: #2E406E;
+    }
+    
+    .icon-whatsapp{
+        background-color: #25d366;
+    }
+    
+    .icon-instagram {
+        background: #DD2A7B;
+    }
+    
+    .icon:first-child {
+        border-radius: 1rem 0 0 0;
+    }
+    
+    .icon:last-child {
+        border-radius: 0 0 0 1rem;
+    }
+    
+    .icon:hover {
+        padding-right: 3rem;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    }
