@@ -1,23 +1,24 @@
-  /*Color fondo*/
- body{
-        background-color: #FADBD8;
-        font-family: Arial, sans-serif;
+    /*Color fondo*/
+    body{
+        background-color: #FFFFFF;
     }
-
 
     /*Contenedor Menu*/
     .contenedor{
-        width: 90%;
-        max-width: 800px;
-        margin: auto;
+        width: 100%; 
+        position: fixed;
+        text-align: center;
+        z-index: 2;
+        margin-left: 10px;
         display: flex;
         justify-content: center;
+        background-color:#F7E6E7;
     }
 
     header .categorias{
         display: flex;
         flex-wrap: wrap;
-     }
+    }
    
     header .categorias a{
         color: black;
@@ -26,45 +27,58 @@
         font-weight: 500;
         text-decoration: none;
         padding: 5px;
+        font-family: 'Gill Sans','Trebuchet MS';
     }
-        
 
-    /*Imagenes del inicio*/
+    header .categorias :hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+
+    /*Distancia imagenes del inicio*/
     .inicio{
-        margin-left: 5%;
-        padding-top: 2%;
+        margin-left: 10%;
+        padding-top: 8%;
     }
 
+    /*Tamaño imagenes del inicio*/
     .inicio img {
         margin: 1%;
-        width: 800px;
-        height:800px;
+        width: 700px;
+        height:700px;
         padding: 1px;
         border-radius: 10%;
-	    border:4px solid #fff;
+	    border:4px solid #FFFFFF;
     }
 
+    /*Efecto agrandar imagenes del inicio*/
     .centrarinicio :hover{
         transform: scale(1.1);
         transition-duration: 3s;
+        border-radius: 10%;
+	    border:4px solid #FFA07A;
     }
 
 
 
-/*Contenedor Productos Destacados */
+/*Contenedor de los productos */
  .contenedorIma{
-    background-color: rgba(15, 120, 240, 0.1);
+   /* background-color: rgba(15, 120, 240, 0.1);*/
+    background-color: #F7E6E7 ;
     padding: 10px;
     margin-left: 10px;
+    width: 100%;
 }
 
-/*Imagen Mapa */
+/*Imagenes horizontal */
 .centrarimagenes{
 display: flex;
 flex-direction: row;
-
+/*Flex wrap permite que las fotos de los productos bajen a la siguiente fila*/
+flex-wrap: wrap;
 }
 
+/*Tamaño imagenes de los productos*/
 .imagenes img{
 	margin: 1%;
 	width: 300px;
@@ -76,25 +90,38 @@ flex-direction: row;
 	padding: 1px;
 }
 
+/*Efecto agrandar imagenes de los productos*/
 .centrarimagenes :hover img{
 transform: scale(1.1);
-transition-duration: 3s;
+transition-duration: 1s;
+border-radius: 50%;
+border:4px solid #FFFFFF;
 }
 
+/*Tipografia Seccion Productos Destacados*/
 .descripcionInicio{
 text-align: center;
 padding: 10px;
-font-size: 25px;
+font-size: 30px;
 font-family: comic;
+color:#3498DB;
 }
 
+/*Tipografia de los productos*/
 .text{
 padding: 10px;
 font-size: 20px;
 text-align: center;
+font-family: Candara;
 }
 
-
+ /*Tipografia Seccion Mochilas y Zapatos*/
+.descripcion{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: comic;
+}
 
 
 
