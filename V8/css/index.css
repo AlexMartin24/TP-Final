@@ -1,0 +1,206 @@
+    /*Color fondo*/
+    body{
+        background-color: #FFFFFF;
+        margin: 0%;
+    }
+
+    /*Contenedor Menu*/
+    .contenedor{
+        width: 100%; 
+        position: fixed;
+        text-align: center;
+        z-index: 2;
+        /*margin-left: 10px;*/
+        display: flex;
+        justify-content: center;
+        background-color:#F7E6E7;
+    }
+
+    header .categorias{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    header .categorias a{
+        color: black;
+        margin: 5px 5px;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px;
+        font-family: 'Gill Sans','Trebuchet MS';
+    }
+
+    header .categorias :hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+
+  
+
+/*Contenedor de los productos */
+ .contenedorIma{
+   /* background-color: rgba(15, 120, 240, 0.1);*/
+    background-color: #F7E6E7 ;
+    padding: 10px;
+    /*margin-left: 10px;*/
+    width: auto;
+    padding-bottom: 4%;
+}
+
+.quitarSubrayado{
+    text-decoration: none;
+    color: black;
+}
+
+/*Imagenes horizontal */
+.centrarimagenes{
+display: flex;
+flex-direction: row;
+/*Flex wrap permite que las fotos de los productos bajen a la siguiente fila*/
+flex-wrap: wrap;
+}
+
+/*Tamaño imagenes de los productos*/
+.imagenes img{
+	margin: 1%;
+	width: 300px;
+	height:300px;
+	object-fit: cover;
+	border-radius: 50%;
+	border:2px solid #fff;
+	position: relative;
+	padding: 1px;
+}
+
+/*Efecto agrandar imagenes de los productos*/
+.centrarimagenes :hover img{
+transform: scale(1.1);
+transition-duration: 1s;
+border-radius: 50%;
+border:4px solid #FFFFFF;
+}
+
+/*Tipografia Seccion Productos Destacados*/
+.descripcionInicio{
+text-align: center;
+padding: 10px;
+padding-top: 10%;
+font-size: 30px;
+font-family: comic;
+color:#3498DB;
+}
+
+/*Tipografia de los productos*/
+.text{
+padding: 10px;
+padding-left: 20px;
+font-size: 20px;
+text-align: center;
+font-family: Candara;
+}
+
+ /*Tipografia Seccion Mochilas y Zapatos*/
+.descripcion{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: comic;
+    padding-top: 5%;
+}
+
+/*Contenedor Footer - Color */
+footer{
+    background-color: #ADACAC;
+}
+
+/*Quitar Subrayado */
+.footer{
+    text-decoration: none;
+    color: black;
+}
+
+/*Footer Horizontal  */
+#contenedorfooter{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;  
+    padding: 50px;
+}
+
+/* Titulo Footer  */
+.tituloFooter{
+    padding-left: 10px;
+    font-size: 35px;
+    font-family: Lucida Bright ;
+    color: rgb(26, 30, 75);
+}
+
+/*Cat - Inf - Med. Pagos | Formato Lista  */
+.lista{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: Lucida Bright;
+    margin-top: 3%;
+}
+
+/* Distancia En Las letras categorias */
+.dist-row{
+    margin-top: 5%;
+    display: row;
+}
+
+
+/*Distancia de los elementos del footer  */
+.distancia{
+    padding-left: 25%;
+}
+
+
+/*Barra Redes Sociales*/
+    .redes-sociales {
+        position: fixed;
+        right: 0;
+        top: 35%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    }
+    
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: .7rem;
+        display: flex;
+        transition: all .5s;
+    }
+    
+    .icon-facebook {
+        background: #2E406E;
+    }
+    
+    .icon-whatsapp{
+        background-color: #25d366;
+    }
+    
+    .icon-instagram {
+        background: #DD2A7B;
+    }
+    
+    .icon:first-child {
+        border-radius: 1rem 0 0 0;
+    }
+    
+    .icon:last-child {
+        border-radius: 0 0 0 1rem;
+    }
+    
+    .icon:hover {
+        padding-right: 3rem;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    }
