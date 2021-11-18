@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Archivo css -->
+  <link rel="stylesheet" href="./css/moc.css">
+  <!-- Redes Sociales -->
+  <link rel="stylesheet" href="./font.css">
+  <title>Mochila con Tachas</title>
+
+  <script>
+    function comprar(){
+        var cant = document.getElementById ("idCant").value;
+        var precio = 850;
+
+        if(cant<=0){
+            alert("La cantidad no puede ser menor o igual que cero");
+            return;
+        }
+        precio = parseInt (precio);
+        var total = precio * cant;
+        alert ("Valor por unidad: $" + precio + "  Valor Total de su Compra: $" + total);
+
+        //localStorage.setItem ("Precio", total);
+        }
+
+   
+
+
+        function mostrarFoco(){
+        var foco = document.getElementById("foco");
+        foco.hidden = false;
+        }
+
+    function QuitarFoco(){
+        var foco = document.getElementById("foco");
+        foco.hidden = true;
+        }
+
+
+
+        function CambiarImagen(){
+          var img = document.getElementById('myImage');
+          if (img.src.match("on")) {
+            img.src = "imagenes/tachas1.jpeg";
+          } else {
+            img.src = "imagenes/tachas1.jpeg";
+          }
+        }
+
+      function CambiarImagen2(){
+          var img = document.getElementById('myImage');
+          if (img.src.match("on")) {
+            img.src = "imagenes/tachas1.jpeg";
+          } else {
+            img.src = "imagenes/tachas2.jpeg";
+          }
+        }
+
+        function CambiarImagen3(){
+          var img = document.getElementById('myImage');
+          if (img.src.match("on")) {
+            img.src = "imagenes/tachas1.jpeg";
+          } else {
+            img.src = "imagenes/tachas3.jpeg";
+          }
+        }
+      
+
+  </script>
+
+</head>
+<body>
+    <div class="contenedor">
+      <header>
+        <!-- Logo -->
+            <center>
+                <a href="index.html"> <img src="imagenes/logo.png"  width="200" height="70" ></a>
+                <br clear="right">
+                </center>
+
+        <!-- Menu horizontal -->
+        <div class="categorias" id="categorias">
+            <a href="index.html" class="nav-menu">Inicio</a>
+            <a href="#Mochilas" class="nav-menu">Mochilas</a>
+            <a href="#Zapatos"  class="nav-menu">Zapatos</a>
+   <!--           <a href="preg-frec.html" class="nav-menu">Preguntas Frecuentes</a>-->
+        </div>
+      </header>
+    </div>
+      
+
+<br><br><br><br><br><br><br>
+
+
+        <div class="inicio">
+            <div class="mini">
+                <img src="imagenes/tachas1.jpeg" onclick="CambiarImagen()" onfocus="seleccionar()">
+                <img src="imagenes/tachas2.jpeg" onclick="CambiarImagen2()">
+                <img src="imagenes/tachas3.jpeg" onclick="CambiarImagen3()">
+            </div>
+
+                <img id="myImage" src="imagenes/tachas1.jpeg" id="imgPrincipal" >
+                <div class="info">
+                    <p class="Titulo">Mochila con Orejitas</p>
+                    <p class="Titulo">$850,00 </p>
+                    <br>
+                    <p><label for="idCant">Cantidad</label></p>
+                    <input type="number" id="idCant" placeholder="1" onfocus="mostrarFoco()" onblur="QuitarFoco()"/>
+                    <p id="foco" hidden = "true">La cantidad no puede ser menor o igual que cero.</p>
+
+
+                    <p class="Subtitulo">3 Cuotas Sin Interes</p>
+                    
+                    <p> Pago en efectivo</p>
+                    <p> 5% de descuento abonando en el local</p>
+                    <p> Envío</p>
+                    <p> Vía Correo Argentino</p>
+                    <p> Seguridad</p>
+                    <p> Tu compra está protegida, cancelá gratis si te arrepentís</p>
+
+                    <input id="btnComprar" class="btnComprar" type = "button" value = Comprar  onclick = "comprar()"/>
+                </div>
+        </div>
+
+    
+
+
+</body>
+
+       <!--Barra Redes Sociales-->
+       <div class="redes-sociales">
+        <a href="https://www.facebook.com/Ladystarmochilas" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://wa.me/+5491131701025" class="icon icon-whatsapp" target="_blank"></a>
+        <a href="https://www.instagram.com/mochilas.ladystar" class="icon icon-instagram" target="_blank"></a>
+    </div>
+
+
+
+
+  <!-- Pie de pagina  -->
+  <footer>
+    <div id="contenedorfooter">
+        <div class="tituloFooter">Categorías
+          <div class="lista">
+            <div class="dist-row">
+            <a href="index.html" class="footer">Inicio</a></div>
+            <div class="dist-row">
+            <a href="#Mochilas" class="footer">Mochilas</a></div>
+            <div class="dist-row">
+            <a href="#Zapatos" class="footer">Zapatos</a></div>
+            <div class="dist-row">
+            <a href="preg-frec.html" class="footer">Preguntas Frecuentes</a></div>
+  
+          </div>
+        </div>
+  
+      <div class="distancia">
+        <div class="tituloFooter">Información
+            <div class="lista">
+              <div class="dist-row">
+                <a href="contacto.html" class="footer">Contacto</a></div>
+                <div class="dist-row">
+                <a href="./dev.html" class="footer">Politica de Devolución</a></div>
+                <div class="dist-row">
+                <a href="" class="footer">Envíos</a></div>
+                <div class="dist-row">
+                <a href="horarios.html" class="footer">Horario de Atención</a></div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="distancia">
+        <div class="tituloFooter">Medios de Pago
+            <div class="dist-row">
+              <img src="imagenes/medios de pago/VISA.png" width="40"height="25">
+              <img src="imagenes/medios de pago/mastercard@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/amex@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/diners@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/banelco@2x.png" width="40"height="25">
+            </div>
+          <div class="dist-row">
+              <img src="imagenes/medios de pago/cabal@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/cencosud@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/rapipago@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/pagofacil@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/mercadopago@2x.png" width="40"height="25">
+          </div>
+          <div class="dist-row">
+              <img src="imagenes/medios de pago/argencard@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/tarjeta-naranja@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/tarjeta-shopping@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/nativa@2x.png" width="40"height="25">
+              <img src="imagenes/medios de pago/visadebit@2x.png" width="40"height="25">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </html>
